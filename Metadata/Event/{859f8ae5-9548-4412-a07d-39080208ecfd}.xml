@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{216f2133-ff51-4d4e-87d2-b87d3dc58f4e}">
+		<relationship name="automationTracks">
+			<destination>{0f7ebb42-47dd-4057-a9a6-a284bf78b52f}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{018727e4-df1f-4ebd-ae5e-4ee5d39d9f2b}</destination>
 		</relationship>
@@ -79,6 +82,12 @@
 		<property name="volume">
 			<value>-7.5</value>
 		</property>
+		<relationship name="automators">
+			<destination>{a27b43e9-3330-4c40-b6f5-65383826408e}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{923cada0-9c00-4ca6-80ab-cd0e9632e235}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{6aaf9294-cc34-4218-bbd2-ac66d1c5f448}</destination>
 		</relationship>
@@ -87,6 +96,11 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{52681531-c7b3-4d3f-8a3c-292bcde21c46}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{0f7ebb42-47dd-4057-a9a6-a284bf78b52f}">
+		<relationship name="automator">
+			<destination>{a27b43e9-3330-4c40-b6f5-65383826408e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{75453e94-63a2-424e-b916-50c085ba3203}">
@@ -144,6 +158,25 @@
 		<relationship name="markerTrack">
 			<destination>{55d908a1-53fa-4035-a3c7-e6cfc1d70983}</destination>
 		</relationship>
+	</object>
+	<object class="Automator" id="{a27b43e9-3330-4c40-b6f5-65383826408e}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{923cada0-9c00-4ca6-80ab-cd0e9632e235}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{6aaf9294-cc34-4218-bbd2-ac66d1c5f448}">
 		<relationship name="effects">
