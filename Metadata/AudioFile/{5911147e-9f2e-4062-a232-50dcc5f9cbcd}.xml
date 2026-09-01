@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{2718a6a0-9d6b-47cd-84e2-2085a5efc964}">
+	<object class="AudioFile" id="{5911147e-9f2e-4062-a232-50dcc5f9cbcd}">
 		<property name="assetPath">
-			<value>Quest (Loopable).wav</value>
+			<value>bleed.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>116.21353741496598</value>
+			<value>1.1663492063492062</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8b5cdd13-c1c9-488b-b4f2-2ec03f8a30fd}</destination>
